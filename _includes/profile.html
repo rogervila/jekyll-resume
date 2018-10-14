@@ -1,0 +1,26 @@
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3">
+                <figure class="image is-128x128">
+                    <img src="{{ site.data.profile.photo }}" alt="{{ site.data.profile.name }}">
+                </figure>
+            </div>
+            <div class="column">
+                <div class="content is-medium">
+                    <h1>{{ site.data.profile.name }}</h1>
+                    <p class="has-text-info ">{{ site.data.profile.title }}</p>
+                    <p class="has-text-grey-lighter">
+                        <span class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            {{ site.data.profile.location | upcase }}
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

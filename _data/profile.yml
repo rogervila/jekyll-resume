@@ -1,0 +1,13 @@
+photo: https://placeimg.com/128/128/people
+name: John Doe
+title: Senior Lorem Ipsum
+location: Sitges, 08870, Barcelona
+address: Fake street 123, Sitges, 08870, Barcelona
+phone: +34 646 46 64 46
+birthday: 1992-04-17
+place_of_birth: Barcelona
+nationality: Spain
+about:
+  - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+  - Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+  - Donec vitae sapien ut libero venenatis faucibus.

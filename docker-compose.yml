@@ -1,0 +1,13 @@
+version: '3'
+services:
+  curriculum:
+    image: curriculum
+    build:
+      context: ./
+    ports:
+      - '8080:4000'
+    environment:
+      PAGES_REPO_NWO: foo/bar
+      SITE_URL: lol.com
+    volumes:
+      - './:/usr/app'

@@ -1,0 +1,10 @@
+---
+encoding: utf-8
+url: ''
+sass:
+  sass_dir: _sass
+  style: compressed
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,23 @@
+image: ruby:2.4.4-alpine3.7
+
+cache:
+  paths:
+    - vendor/
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - gem install bundler --no-rdoc --no-ri
+  - bundle install --path vendor
+
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public
+    - gzip < public/index.html > public/index.html.gz
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
